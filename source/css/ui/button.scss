@@ -27,8 +27,12 @@
     border-color: $gray-9;
   }
 
-  &:active {
+  &:not(:disabled):active {
     background-color: $gray-2;
+  }
+
+  &:disabled {
+    color: $gray-4;
   }
 }
 
@@ -46,6 +50,12 @@
     background-color: $blue-9;
     border-color: $blue-9;
   }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: #ccc;
+    color: $gray-4;
+  }
 }
 
 .button--danger {
@@ -61,5 +71,11 @@
   &:active {
     background-color: $red-9;
     border-color: $red-9;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: #ccc;
+    color: $gray-4;
   }
 }
