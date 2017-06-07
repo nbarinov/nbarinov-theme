@@ -1,0 +1,37 @@
+@font-face {
+	font-family: $heuristica-regular;
+	src: url("../fonts/HeuristicaRegular/HeuristicaRegular.eot");
+	src: url("../fonts/HeuristicaRegular/HeuristicaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/HeuristicaRegular/HeuristicaRegular.woff") format("woff"),
+	url("../fonts/HeuristicaRegular/HeuristicaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: $sf-ui-text-regular;
+	src: url("../fonts/SFUIText/SFUIText-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: $sf-ui-text-italic;
+	src: url("../fonts/SFUIText/SFUIText-Italic.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: $sf-ui-text-light;
+	src: url("../fonts/SFUIText/SFUIText-Light.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: $sf-ui-text-medium;
+	src: url("../fonts/SFUIText/SFUIText-Medium.otf");
+	font-style: normal;
+	font-weight: normal;
+}
