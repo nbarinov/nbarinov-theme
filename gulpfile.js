@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     uglifyjs = require('gulp-uglifyjs'),
-    uglifycss = require('gulp-uglifycss'),
+    cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -34,13 +34,8 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
   return gulp.src('source/css/style.scss')
-    .pipe(sass({
-      includePaths: require('normalize').includePaths
-    }).on('error', sass.logError))
-    .pipe(uglifycss({
-      'maxLineLen': 80,
-      'uglyComments': true
-    }))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./dist/css/'))
     .pipe(notify('CSS saved'))
