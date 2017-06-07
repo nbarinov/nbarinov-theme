@@ -1,0 +1,11 @@
+.link {
+  font-family: $sf-ui-text-regular;
+  text-decoration: none;
+  color: $blue-5;
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
