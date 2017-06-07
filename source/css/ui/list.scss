@@ -1,0 +1,30 @@
+.list {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--disc {
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.list--dicimal {
+  padding-left: 18px;
+  list-style: decimal;
+}
+
+.list__item {
+  margin-bottom: 10px;
+  color: $gray-9;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
