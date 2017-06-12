@@ -27,12 +27,18 @@
     border-color: $gray-9;
   }
 
-  &:not(:disabled):active {
+  &:active {
     background-color: $gray-2;
   }
 
   &:disabled {
     color: $gray-4;
+
+    &:hover,
+    &:active {
+      border-color: #ccc;
+      background-color: transparent;
+    }
   }
 }
 
