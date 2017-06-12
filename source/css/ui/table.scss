@@ -1,0 +1,29 @@
+.table {
+  max-width: 100%;
+  width: 100%;
+
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table--divider .table__tbody tr:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.table__thead tr th {
+  padding: 16px 12px;
+
+  font-family: $sf-ui-text-light;
+  font-size: 14px;
+  font-weight: 200;
+  color: $gray-6;
+}
+
+.table__tbody tr td {
+  padding: 16px 12px;
+
+  font-family: $sf-ui-text-regular;
+  font-size: 16px;
+  color: $gray-9;
+}
