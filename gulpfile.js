@@ -6,13 +6,16 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     rimraf = require('rimraf'),
+    imagemin = require('gulp-imagemin'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
 var paths = {
   html: ['source/*.html'],
   css: ['source/css/**/*.scss'],
-  js: ['source/js/*.js'],
+  js: ['source/js/**/*.js'],
+  fonts: ['source/fonts/**/*.*'],
+  images: ['source/images/**/*.*'],
   clean: ''
 }
 
@@ -51,6 +54,24 @@ gulp.task('scripts', function() {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest('./dist/fonts/'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('images', function () {
+  return gulp.src(paths.images)
+    .pipe(imagemin([
+          	imagemin.gifsicle({interlaced: true}),
+          	imagemin.jpegtran({progressive: true}),
+          	imagemin.optipng({optimizationLevel: 5}),
+          	imagemin.svgo({plugins: [{removeViewBox: true}]})
+          ]))
+    .pipe(gulp.dest('./dist/images/'))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('clean', function(cb) {
   rimraf(paths.clean, cb)
 });
@@ -59,6 +80,8 @@ gulp.task('watcher', function() {
   gulp.watch(paths.html, ['html']);
   gulp.watch(paths.css, ['css']);
   gulp.watch(paths.js, ['scripts']);
+  gulp.watch(paths.fonts, ['fonts']);
+  gulp.watch(paths.images, ['images']);
 });
 
 gulp.task('default', ['watcher', 'browserSync']);
