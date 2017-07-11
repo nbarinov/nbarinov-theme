@@ -3,6 +3,15 @@
 @import "mixins.scss";
 
 @import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/flexboxgrid/dist/flexboxgrid.css";
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 // ui
 @import "ui/button";
@@ -11,3 +20,7 @@
 @import "ui/blockquote";
 @import "ui/form";
 @import "ui/table";
+
+// blocks
+@import "blocks/page-header";
+@import "blocks/main-nav";

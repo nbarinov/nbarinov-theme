@@ -1,0 +1,49 @@
+.page-header {
+  width: 100%;
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
+  margin: 1.5em;
+}
+
+.page-header__logo {
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-block;
+
+    font-family: $heuristica-regular, serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #404040;
+    text-decoration: none;
+
+    transition: color 130ms ease-out;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+@media (min-width: $table-width) {
+  .page-header__wrapper {
+    margin: 2.5rem;
+  }
+
+  .page-header__logo {
+    a {
+      font-size: 1.265625rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    a {
+      font-size: 1.6875rem;
+    }
+  }
+}
