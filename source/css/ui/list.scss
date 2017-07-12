@@ -11,12 +11,12 @@
 }
 
 .list--disc {
-  padding-left: 18px;
+  padding-left: 42px !important;
   list-style: disc;
 }
 
 .list--dicimal {
-  padding-left: 18px;
+  padding-left: 42px !important;
   list-style: decimal;
 }
 
@@ -26,5 +26,12 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $table-width) {
+  .list--disc,
+  .list--dicimal {
+    padding-left: 18px !important;
   }
 }
