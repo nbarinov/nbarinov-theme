@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Блог – Никита Баринов</title>
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body onload="dateNow.innerHTML = (new Date()).getFullYear()">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="row">
+        <div class="col-xs-8  col-md-6  col-lg-4">
+          <h2 class="page-header__logo"><a href="/">Никита Баринов</a></h2>
+        </div>
+        <div class="col-xs-4  col-md-6  col-lg-8">
+          <nav class="page-header__nav  main-nav  main-nav--closed">
+            <button class="main-nav__toggle">
+              toggle
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Портфолио</a></li>
+                <li class="main-nav__item"><a href="blog.html">Блог</a></li>
+                <li class="main-nav__item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-main__article  page-main__article--one">
+      <article class="article  article--one">
+        <header class="article__header">
+          <h1 class="article__title  article__title--big"><a href="article.html">О том, как я улучшил свою продуктивность</a></h1>
+        </header>
+        <p class="article__p">В один прекрасный момент своей жизни я осознал, что моя продуктивность сильно хромает. Связано это было с тем, что я не имел чёткого плана действий в любой задаче. Это напрягала меня, потому что создавало проблемы.</p>
+        <p class="article__p">Наконец я решил избавиться от того, то есть повысить свою продуктивность. И на помощь мне пришел Trello.</p>
+        <h3 class="article__h3">Что это такое?</h3>
+        <p class="article__p"><strong>Trello</strong> — это бесплатное веб-приложение для управления проектами небольших групп. Проще говоря, это инструмент, с помощью которого вы можете организовать себя.</p>
+        <h3 class="article__h3">Для чего это?</h3>
+        <p class="article__p">Представим, что вы захотели познать что-то новое. Но про это что-то новое так много информации, что легко запутаться, а это может привести к тому, что мы просто забросим это в долгий ящик. Как же нам не запутаться? Просто создаем новую доску для поставленной задачи.</p>
+        <p class="article__p">Теперь создадим несколько списков(или колонки), которые помогут нам составить чёткий план. Обычно для своих задач я создаю три колонки:</p>
+        <ul class="article__list  list  list--dicimal">
+          <li class="list__item">«To do», в которой хранятся подзадачи, которые предстоит выполнить</li>
+          <li class="list__item">«Doing», в которой хранятся подзадачи, которые выполняются</li>
+          <li class="list__item">«Done!», в которой хранятся подзадачи, которые выполнены успешно</li>
+        </ul>
+        <h3 class="article__h3">Пример</h3>
+        <p class="article__p">В качестве примера, приведу доску, посвященную моему сайту.</p>
+        <figure class="article__figure">
+          <img src="images/scr-1.png" alt="пример" class="article__img">
+          <figcaption class="article__figcaption">Подпись 1</figcaption>
+        </figure>
+        <p class="article__p">Как обычно, у меня три списка. Из первой колонки я беру задачу, перетаскаю ее в колонку «Doing» и начинаю работать. После завершения задачи переношу  ее в последний список. И так с каждой задачей.</p>
+        <h3 class="article__h3">Плюшки</h3>
+        <p class="article__p">Первым делом, отмечу, что каждой карточке можно добавлять метки. Они неплохо может облегчить работу в команде.</p>
+        <figure class="article__figure">
+          <img src="images/scr-2.png" alt="плюшки" class="article__img">
+          <figcaption class="article__figcaption">Подпись 2</figcaption>
+        </figure>
+        <p class="article__p">Кстати, о командах, в Trello можно создать команды. Если вы работает над проектом в команде, то сервис дает вам возможность организовать задачи в доске, доступной всем членам проекта. Это достаточно удобно, не правда ли?</p>
+        <p class="article__p">Также у Trello есть свое приложение под iOS и Android. Но зачем оно нужно? Пример из жизни: находясь в пути, гуляя по парку да или просто сидя на толчке, в голову может стрельнуть интересная идея. Чтобы не забыть ее, запишем к себе в список.</p>
+        <figure class="article__figure  article__figure--min">
+          <img src="images/scr-3.png" alt="ios" class="article__img">
+          <figcaption class="article__figcaption">Подпись 3</figcaption>
+        </figure>
+        <h3 class="article__h3">В итоге</h3>
+        <p class="article__p">С сервисом Trello действительно жить стало чуточку проще.</p>
+        <footer class="article__footer">
+          <div class="row">
+            <div class="col-xs-12  col-md-8  col-lg-8">
+              <ul class="article__tags">
+                <li class="article__tag"><a href="#" class="badge">продуктивность</a></li>
+                <li class="article__tag"><a href="#" class="badge">сервисы</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12  col-md-4  col-lg-4">
+              <span class="article__date">30 января 2017</span>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="row  center-xs">
+        <div class="col-xs-8">
+          <p class="page-footer__p">
+            &copy; 2016-<span id="dateNow"></span>
+            <a href="#">Никита Баринов</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.min.js"></script>
+</body>
+</html>

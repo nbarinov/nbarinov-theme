@@ -6,3 +6,16 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.page-main__article {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.page-main__article--border {
+  border-bottom: 1px solid #e5e5e5;
+}
