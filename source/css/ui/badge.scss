@@ -1,0 +1,13 @@
+.badge {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  font-family: $sf-ui-text-light, serif;
+  font-size: 0.9140625rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
