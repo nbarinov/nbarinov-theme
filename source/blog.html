@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Блог – Никита Баринов</title>
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body onload="dateNow.innerHTML = (new Date()).getFullYear()">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="row">
+        <div class="col-xs-8  col-md-6  col-lg-4">
+          <h1 class="page-header__logo"><a href="/">Никита Баринов</a></h1>
+        </div>
+        <div class="col-xs-4  col-md-6  col-lg-8">
+          <nav class="page-header__nav  main-nav  main-nav--closed">
+            <button class="main-nav__toggle">
+              toggle
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Портфолио</a></li>
+                <li class="main-nav__item"><a href="blog.html">Блог</a></li>
+                <li class="main-nav__item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-main__articles">
+      <article class="page-main__article  article">
+        <header class="article__header">
+          <h2 class="article__title"><a href="article.html">О том, как я улучшил свою продуктивность</a></h2>
+        </header>
+        <p class="article__p">
+          В один прекрасный момент своей жизни я осознал, что моя продуктивность сильно хромает. Связано это было с тем, что я не имел чёткого плана действий в любой задаче. Это напрягала меня, потому что создавало проблемы. Наконец я решил избавиться от того, то есть повысить свою продуктивность. И на помощь мне пришел Trello. Что это такое?…
+          <br>
+          <a href="article.html" class="article__read-more">Читать дальше...</a>
+        </p>
+        <footer class="article__footer">
+          <div class="row">
+            <div class="col-xs-12  col-md-8  col-lg-8">
+              <ul class="article__tags">
+                <li class="article__tag"><a href="#" class="badge">продуктивность</a></li>
+                <li class="article__tag"><a href="#" class="badge">сервисы</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12  col-md-4  col-lg-4">
+              <span class="article__date">30 января 2017</span>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="row  center-xs">
+        <div class="col-xs-8">
+          <p class="page-footer__p">
+            &copy; 2016-<span id="dateNow"></span>
+            <a href="#">Никита Баринов</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.min.js"></script>
+</body>
+</html>

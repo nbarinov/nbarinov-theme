@@ -1,0 +1,15 @@
+.page-footer {}
+
+.page-footer__wrapper {
+  padding: 25px 0;
+}
+
+.page-footer__p {
+  font-family: $sf-ui-text-light, sans-serif;
+  font-size: 0.84375rem;
+  color: rgba(0, 0, 0, 0.75);
+
+  a {
+    color: rgba(0, 0, 0, 0.75);
+  }
+}

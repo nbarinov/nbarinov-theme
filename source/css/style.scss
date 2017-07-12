@@ -20,8 +20,12 @@ html {
 @import "ui/blockquote";
 @import "ui/form";
 @import "ui/table";
+@import "ui/badge";
 
 // blocks
 @import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/page-main";
 @import "blocks/welcome";
+@import "blocks/article";
+@import "blocks/page-footer";
